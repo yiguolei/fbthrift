@@ -70,7 +70,8 @@ class TAsyncSSLSocket : public folly::AsyncSSLSocket {
         new TAsyncSSLSocket(ctx, evb, fd, server));
   }
 
-#if OPENSSL_VERSION_NUMBER >= 0x1000105fL && !defined(OPENSSL_NO_TLSEXT)
+// #if OPENSSL_VERSION_NUMBER >= 0x1000105fL && !defined(OPENSSL_NO_TLSEXT)
+#if 0
   TAsyncSSLSocket(
       const std::shared_ptr<folly::SSLContext>& ctx,
       folly::EventBase* evb,
