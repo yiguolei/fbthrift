@@ -13,7 +13,7 @@
 # limitations under the License.
 
 add_executable(compiler_generate_build_templates build_templates.cc)
-target_link_libraries(compiler_generate_build_templates ${Boost_LIBRARIES})
+target_link_libraries(compiler_generate_build_templates PUBLIC ${Boost_LIBRARIES})
 
 file(
   GLOB_RECURSE
